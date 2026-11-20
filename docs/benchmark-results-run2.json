@@ -1,0 +1,79 @@
+﻿{
+    "measuredAt":  "2026-11-18T17:36:15",
+    "machine":  "Microsoft Windows 11 Home 10.0.26300.0",
+    "rainmeter":  "4.5.28.3936 (64-bit)",
+    "with":  {
+                 "label":  "with DesktopRadar",
+                 "seconds":  300,
+                 "cpuMs":  2141,
+                 "cpuPercentOneCore":  0.713,
+                 "workingSetMB":  60.4,
+                 "privateMB":  20.4,
+                 "privateMaxMB":  21.9,
+                 "handles":  674
+             },
+    "without":  {
+                    "label":  "without DesktopRadar",
+                    "seconds":  300,
+                    "cpuMs":  1406,
+                    "cpuPercentOneCore":  0.468,
+                    "workingSetMB":  57.8,
+                    "privateMB":  17.8,
+                    "privateMaxMB":  18.1,
+                    "handles":  650
+                },
+    "replay":  {
+                   "label":  "replay playing",
+                   "seconds":  15,
+                   "cpuMs":  47,
+                   "cpuPercentOneCore":  0.309,
+                   "workingSetMB":  61.5,
+                   "privateMB":  20.2,
+                   "privateMaxMB":  20.6,
+                   "handles":  672
+               },
+    "startup":  [
+                    {
+                        "label":  "start without #1",
+                        "skins":  3,
+                        "msToAllSkinsVisible":  359,
+                        "cpuMsFirst10s":  391,
+                        "privateMBAfter10s":  11.7
+                    },
+                    {
+                        "label":  "start with #1",
+                        "skins":  4,
+                        "msToAllSkinsVisible":  363,
+                        "cpuMsFirst10s":  719,
+                        "privateMBAfter10s":  20
+                    },
+                    {
+                        "label":  "start without #2",
+                        "skins":  3,
+                        "msToAllSkinsVisible":  298,
+                        "cpuMsFirst10s":  375,
+                        "privateMBAfter10s":  11.9
+                    },
+                    {
+                        "label":  "start with #2",
+                        "skins":  4,
+                        "msToAllSkinsVisible":  344,
+                        "cpuMsFirst10s":  375,
+                        "privateMBAfter10s":  19.7
+                    },
+                    {
+                        "label":  "start without #3",
+                        "skins":  3,
+                        "msToAllSkinsVisible":  294,
+                        "cpuMsFirst10s":  359,
+                        "privateMBAfter10s":  11.9
+                    },
+                    {
+                        "label":  "start with #3",
+                        "skins":  4,
+                        "msToAllSkinsVisible":  361,
+                        "cpuMsFirst10s":  609,
+                        "privateMBAfter10s":  21.1
+                    }
+                ]
+}

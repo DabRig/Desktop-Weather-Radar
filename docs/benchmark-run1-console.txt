@@ -1,0 +1,14 @@
+Rainmeter 4.5.28.3936 (64-bit); active skins: illustro\Clock, illustro\Disk, illustro\System, DesktopRadar
+
+--- Steady state (10 min each)
+without DesktopRadar   CPU   4000 ms in 601 s (0.666% of one core)  WS 65.4 MB  private 24.4 MB (max 24.8)  handles 757
+with DesktopRadar      CPU   3391 ms in 601 s (0.565% of one core)  WS 69.3 MB  private 28.3 MB (max 28.9)  handles 770
+
+--- Replay (15 s of playback; includes loading frames)
+replay playing         CPU      0 ms in 0 s (0% of one core)  WS 0 MB  private 0 MB (max 0)  handles 0
+
+--- Rainmeter startup (3 runs each)
+start without #1       3 skins visible after 419 ms; CPU in first ~10 s 422 ms; private 11.9 MB
+start with #1          4 skins visible after 389 ms; CPU in first ~10 s 641 ms; private 21.1 MB
+start without #2       3 skins visible after 300 ms; CPU in first ~10 s 359 ms; private 11.9 MB
+(run 1 stopped here: the script crashed while restarting Rainmeter; fixed for run 2. Recorded 2026-11-18 ~17:12-17:35 local.)
