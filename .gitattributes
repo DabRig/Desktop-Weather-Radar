@@ -1,0 +1,3 @@
+# Rainmeter variable files are INI, not Assembly/BitBake (GitHub's language guess).
+*.inc linguist-language=INI
+*.ini linguist-language=INI
