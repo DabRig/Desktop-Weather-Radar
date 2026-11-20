@@ -8,7 +8,7 @@
   <a href="https://www.rainmeter.net/"><img alt="Rainmeter 4.5+" src="https://img.shields.io/badge/Rainmeter-4.5%2B-58a6ff?style=for-the-badge&labelColor=0d1117"></a>
   <img alt="Windows 10 | 11" src="https://img.shields.io/badge/Windows-10%20%7C%2011-58a6ff?style=for-the-badge&logo=windows&logoColor=white&labelColor=0d1117">
   <a href="https://www.weather.gov/"><img alt="Data: NOAA / NWS" src="https://img.shields.io/badge/data-NOAA%20%2F%20NWS-58a6ff?style=for-the-badge&labelColor=0d1117"></a>
-  <a href="LICENSE"><img alt="MIT license" src="https://img.shields.io/github/license/DabRig/Desktop-Weather-Radar?style=for-the-badge&color=58a6ff&labelColor=0d1117"></a>
+  <a href="LICENSE"><img alt="MIT license" src="https://img.shields.io/badge/license-MIT-58a6ff?style=for-the-badge&labelColor=0d1117"></a>
 </p>
 
 <p align="center">
@@ -175,21 +175,23 @@ Save, then right-click → **Refresh skin**. Done: it sets itself up for the new
 ## 🛰️ How it works
 
 ```mermaid
-flowchart LR
+flowchart TB
     subgraph once["Once per location"]
+        direction LR
         S["📍 Settings.inc"] --> L["🧮 Map box<br/>(Lua, Web Mercator)"]
         L --> R["📡 Which NOAA mosaic?"]
         R --> N["🏢 Nearest NWS stations"]
         N --> M["🗺️ 4 Census map layers<br/>colored by Rainmeter"]
     end
     subgraph every["Every 15 minutes"]
+        direction LR
         Q["🕒 Newest frame time?<br/>~0.3 KB"] -->|new frame| D["⬇️ Radar image<br/>for that exact time<br/>~55 KB"]
         Q -->|same frame| K["✅ Nothing to download"]
         D --> V{"🔍 Complete PNG?"}
         V -->|yes| W["🖼️ Swap in and save state"]
         V -->|no| X["↩️ Keep last image<br/>retry once"]
     end
-    M -.-> Q
+    once -.-> every
 ```
 
 - **Exact-time downloads.** Every image is requested for the newest frame's timestamp, so a cache can never hand you an old picture, and the observation time is always the real one.
@@ -217,8 +219,8 @@ No registry changes, services, scheduled tasks or startup entries. Uninstalling 
 
 | Suite | What it checks | Result |
 |---|---|---|
-| **Behavior** (inside real Rainmeter, local fake NOAA) | errors, offline, stale, restart, cache slots, sleep/resume, wind, alerts, replay, first-time setup, out-of-coverage | **75 / 75** |
-| **Live data** | NOAA frame times, image export, radar-to-map alignment, NWS links | **12 / 12** |
+| **Behavior** (inside real Rainmeter, local fake NOAA) | errors, offline, stale, restart, cache slots, sleep/resume, wind, alerts, replay, first-time setup, out-of-coverage | **75/75** ✅ |
+| **Live data** | NOAA frame times, image export, radar-to-map alignment, NWS links | **12/12** ✅ |
 | **Install & removal** | `.rmskin` through Rainmeter's own installer, sizes 250–400, clean uninstall | ✅ |
 
 ## ❓ FAQ
