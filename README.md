@@ -293,3 +293,7 @@ The PowerShell scripts target Windows PowerShell 5.1. The behavior suite runs a 
 <p align="center">
   <sub>MIT licensed · made for the Rainmeter community · if it's useful to you, a ⭐ helps others find it</sub>
 </p>
+
+<p align="center">
+  <a href="https://buymeacoffee.com/sebastiansuccess"><img src="docs/images/buy-me-a-coffee.svg" alt="Buy me a coffee" width="236" height="56"></a>
+</p>
