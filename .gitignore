@@ -1,0 +1,7 @@
+# Written by the skin (or tools\Update-Location.ps1) per location
+skin/DesktopRadar/@Resources/Location.inc
+skin/DesktopRadar/@Resources/State.inc
+skin/DesktopRadar/DownloadFile/
+# Built packages go on GitHub Releases, not in the repo
+release/*.rmskin
+release/*.zip
