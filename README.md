@@ -13,7 +13,7 @@
 
 <p align="center">
   <b>A tiny, dark radar widget that shows real NOAA/NWS precipitation around any place you pick:<br>
-  on a real map, refreshed every 15 minutes, honest about how old it is, and light on your PC.</b>
+  on a real map, refreshed every 15 minutes, and light on your PC.</b>
 </p>
 
 <p align="center">
