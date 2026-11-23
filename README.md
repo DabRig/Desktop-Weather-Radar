@@ -297,3 +297,7 @@ The PowerShell scripts target Windows PowerShell 5.1. The behavior suite runs a 
 <p align="center">
   <a href="https://buymeacoffee.com/sebastiansuccess"><img src="docs/images/buy-me-a-coffee.svg" alt="Buy me a coffee" width="236" height="56"></a>
 </p>
+
+<p align="center">
+  <sub>More from me: <a href="https://github.com/DabRig/AV-Transcriber">🎙️ AV Transcriber</a></sub>
+</p>
